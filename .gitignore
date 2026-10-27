@@ -1,0 +1,16 @@
+.DS_Store
+.venv/
+venv/
+__pycache__/
+.ipynb_checkpoints/
+.env
+.env.*
+kaggle.json
+data/
+datasets/
+models/
+*.h5
+*.keras
+*.pkl
+*.joblib
+*.log

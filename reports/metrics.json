@@ -1,0 +1,32 @@
+{
+  "seed": 42,
+  "dataset": "asdasdasasdas/garbage-classification",
+  "images": 2527,
+  "train_images": 2021,
+  "holdout_images": 506,
+  "classes": [
+    "cardboard",
+    "glass",
+    "metal",
+    "paper",
+    "plastic",
+    "trash"
+  ],
+  "comparison": [
+    {
+      "Methodology": "Pixels + PCA + SVM",
+      "Accuracy": 0.6442687747035574,
+      "Macro F1": 0.6449227703382583,
+      "Training CV mean": 0.6303691480259137,
+      "Training CV std": 0.0213444531115054
+    },
+    {
+      "Methodology": "ResNet50 + SVM",
+      "Accuracy": 0.9268774703557312,
+      "Macro F1": 0.9209526670786242,
+      "Training CV mean": 0.908461068329055,
+      "Training CV std": 0.004951321345761036
+    }
+  ],
+  "protocol": "Shared stratified 80/20 split; five-fold stratified CV on training only; no augmentation."
+}
